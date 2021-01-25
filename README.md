@@ -6,7 +6,7 @@ Pixel Art App is a fun drawing application.
 
 Developer: Sergey Novikov (ZBom).
 
-© Copyright 2021, 21t century
+© Copyright 2021
 
 ---
 
