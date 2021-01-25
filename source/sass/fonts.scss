@@ -1,1 +1,13 @@
 // === ШРИФТЫ ===
+@font-face {
+  font-family: "Press Start 2P";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+
+  src:
+    local("Press Start 2P"),
+    local("PressStart-2P"),
+    url("../fonts/PressStart2P.woff2") format("woff2"),
+    url("../fonts/PressStart2P.woff") format("woff");
+}
