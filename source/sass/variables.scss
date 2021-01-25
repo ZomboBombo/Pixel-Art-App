@@ -1,0 +1,30 @@
+// === ПЕРЕМЕННЫЕ ===
+
+// *** для различных Ширин вьюпорта ***
+$width--mobile: 320px;
+$width--tablet: 768px;
+$width--desktop: 1150px;
+
+// *** для Шрифтов ***
+$default-font: "Open Sans", "Arial", sans-serif;
+
+// *** для Цветов ***
+$white: #ffffff;
+$black: #000000;
+$silver: #f9f9f9;
+$outline: #a6c8ff;
+
+$gray: #f1f1f1;
+$gray--lightest: #ececec;
+$gray--dark: #444444;
+$gray--hovered: #8d8d8d;
+$gray--active: #cacaca;
+
+$steel: #e5e5e5;
+$steel--dark: #c7c7c7;
+
+$mint: #62d1ba;
+$mint--light: #63d1bb;
+$mint--dark: #56c3b2;
+$mint--icons: #149080;
+$mint--hover: #46c1ae;

@@ -1,0 +1,39 @@
+// === ИМПРОТИРОВАННЫЕ ФАЙЛЫ СТИЛЕЙ ===
+@import "variables.scss";
+
+// === ГЛОБАЛЬНЫЕ СТИЛИ ===
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+// === МОБИЛЬНАЯ ВЕРСИЯ ===
+body {
+  margin: 0;
+  padding: 0;
+
+
+  // *** Для устранения горизонтальных скроллов в IE 11, Edge и Safari ***
+  overflow-x: hidden;
+}
+
+
+// === Класс для доступного сокрытия элементов ===
+.visually-hidden {
+  width: 1px;
+  height: 1px;
+
+  position: absolute;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
