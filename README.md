@@ -10,4 +10,4 @@ Developer: Sergey Novikov (ZBom).
 
 ---
 
-The original idea for this application belongs to the educational organization «HTML Academy».
+The original idea for this application belongs to the educational organization «HTML Academy»...
