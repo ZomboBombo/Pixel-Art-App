@@ -1,10 +1,98 @@
+.drawing-board__wrapper {
+  max-width: 320px;
+  min-width: 300px;
+}
+
+.drawing-board__user-manual {
+  margin: 0;
+  padding: 0 10px;
+
+  font-size: 14px;
+  line-height: 16px;
+  text-align: justify;
+}
+
+.drawing-board__user-manual-title {
+  margin: 0;
+  padding: 0;
+}
+
+.drawing-board__user-manual-emphasis {
+  color: $color--emphasis;
+}
+
+.drawing-board__user-manual-instructions {
+  margin: 0;
+}
+
+.drawing-board__user-manual-text {
+  margin: 0;
+  padding: 0;
+}
+
 .drawing-board__toolkit {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 
+  margin: 0 auto;
+  margin-top: 60px;
+}
 
-  // *** Tempo ***
-  outline: 2px dashed red;
+.drawing-board__canvas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 20px;
+}
+
+
+/*
+------------------------------------------------------------------
+********************** Интерактивные стили ***********************
+------------------------------------------------------------------
+*/
+.drawing-board__eraser-input:checked ~ .drawing-board__eraser-title {
+  color: $color--emphasis;
+}
+
+.drawing-board__eraser-title:hover {
+  color: $lightgray;
+}
+
+.drawing-board__eraser-title:active {
+  opacity: 0.8;
+}
+
+
+
+/*
+==================================================================
+------------------------- МЕДИАВЫРАЖЕНИЯ -------------------------
+==================================================================
+*/
+
+// *** 1) "Планшетная" ширина вьюпорта ***
+@media (min-width: $width--tablet) {
+  .drawing-board__wrapper {
+    max-width: 640px;
+  }
+
+  .drawing-board__toolkit {
+    max-width: 400px;
+  }
+}
+
+// *** 2) "Десктопная" ширина вьюпорта ***
+@media (min-width: $width--desktop) {
+  .drawing-board__wrapper {
+    max-width: 960px;
+  }
+
+  .drawing-board__user-manual {
+    padding: 0 60px;
+  }
 }
