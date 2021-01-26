@@ -25,7 +25,13 @@
               <p class="drawing-board__user-manual-text">Выбери любой цвет из списка и начинай закрашивать клеточки.</p>
             </li>
             <li class="instructions__item">
-              <p class="drawing-board__user-manual-text">Чтобы вернуть клеточке былой цвет, выбери <span class="drawing-board__user-manual-emphasis">Ластик</span> и нажми на клеточку, которую хочешь исправить.</p>
+              <p class="drawing-board__user-manual-text">Чтобы вернуть клеточке былой цвет, <span class="drawing-board__user-manual-emphasis">включи Ластик</span> и нажми на клеточку, которую хочешь исправить.</p>
+            </li>
+            <li class="instructions__item">
+              <p class="drawing-board__user-manual-text">Не забудь <span class="drawing-board__user-manual-emphasis">выключить Ластик</span>, когда исправишь всё, что нужно.</p>
+            </li>
+            <li class="instructions__item">
+              <p class="drawing-board__user-manual-text">Если в момент написания пикселькартины захотелось начать всё заново, просто нажми на кнопку <span class="drawing-board__user-manual-emphasis">Новый холст</span>.</p>
             </li>
           </ol>
         </section>
@@ -33,17 +39,33 @@
         <section class="drawing-board__toolkit">
           <h2 class="visually-hidden">Рисовальные инструменты</h2>
 
-          <select class="drawing-board__color-selector">
-            <option value="black">Чёрный</option>
-            <option value="red">Красный</option>
-            <option value="green">Зелёный</option>
-            <option value="blue">Синий</option>
-          </select>
+          <div class="drawing-board__color-selector-wrapper">
+            <p class="drawing-board__color-selector-title">Список цветов:</p>
+
+            <select class="drawing-board__color-selector" id="color-selector">
+              <option value="white">Белый</option>
+              <option value="gray">Серый</option>
+              <option value="black">Чёрный</option>
+              <option value="pink">Нежно-розовый</option>
+              <option value="magenta">Ярко-розовый</option>
+              <option value="red">Красный</option>
+              <option value="yellow">Жёлтый</option>
+              <option value="gold">Золотой</option>
+              <option value="springgreen">Салатовый</option>
+              <option value="green">Зелёный</option>
+              <option value="seagreen">Морской зелёный</option>
+              <option value="blue">Синий</option>
+              <option value="purple">Пурпурный</option>
+              <option value="indigo">Фиолетовый</option>
+            </select>
+          </div>
 
           <div class="drawing-board__eraser">
             <input type="checkbox" class="drawing-board__eraser-input" id="eraser">
             <label for="eraser" class="drawing-board__eraser-title">Ластик</label>
           </div>
+
+          <button type="button" class="drawing-board__clear-button" id="clear-button">Новый холст</button>
         </section>
 
         <section class="drawing-board__canvas">
@@ -1250,5 +1272,9 @@
         <p class="pixelart__additional-info">The original idea for this application belongs to the educational organization <a href="https://htmlacademy.ru" target="_blank" class="pixelart__link" title="Go to «HTML Academy» website...">«HTML Academy»</a>.</p>
       </div>
     </footer>
+
+
+    <!-- Скрипты -->
+    <script src="js/drawingBoard.js"></script>
   </body>
 </html>
