@@ -8,8 +8,16 @@
 @import "global.scss";
 
 
+/* *****************************
+*** 2. Вспомогательные стили ***
+***************************** */
+@import "blocks/container.scss";
+
+
 /* **********************
-*** 2. Основные стили ***
+*** 3. Основные стили ***
 ********************** */
 @import "blocks/pixelart.scss";
 @import "blocks/drawing-board.scss";
+@import "blocks/pixels-list.scss";
+@import "blocks/instructions.scss";
