@@ -78,6 +78,8 @@
 }
 
 .pixelart__developer {
+  display: inline-block;
+
   max-width: 120px;
 
   margin: 0;
@@ -85,9 +87,11 @@
 }
 
 .pixelart__link {
+  display: inline-block;
+
   font-size: 8px;
-  line-height: 10px;
-  color: $blueviolet;
+  line-height: 14px;
+  color: $color--emphasis;;
   text-decoration: none;
 }
 
@@ -98,6 +102,22 @@
 
   font-size: 6px;
   line-height: 10px;
+}
+
+
+/*
+------------------------------------------------------------------
+********************** Интерактивные стили ***********************
+------------------------------------------------------------------
+*/
+.pixelart__link:hover,
+.pixelart__link:focus {
+  color: $purple;
+}
+
+.pixelart__link:active {
+  transform: scale(0.95);
+  opacity: 0.6;
 }
 
 
@@ -112,6 +132,11 @@
 @media (min-width: $width--tablet) {
   .pixelart__footer-wrapper {
     max-width: 600px;
+  }
+
+  .pixelart__developer {
+    max-width: 100%;
+    width: auto;
   }
 }
 
