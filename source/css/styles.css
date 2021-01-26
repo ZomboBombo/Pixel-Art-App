@@ -246,17 +246,139 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
+/* *****************************
+*** 2. Вспомогательные стили ***
+***************************** */
+.container {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0 10px; }
+
+/*
+==================================================================
+------------------------- МЕДИАВЫРАЖЕНИЯ -------------------------
+==================================================================
+*/
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px; } }
+
+@media (min-width: 1150px) {
+  .container {
+    max-width: 1150px; } }
+
 /* **********************
-*** 2. Основные стили ***
+*** 3. Основные стили ***
 ********************** */
 .pixelart__header {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 60px; }
+  min-height: 60px;
+  margin-top: 30px;
+  text-align: center; }
+
+.pixelart__header-description {
+  margin: 0;
+  margin-top: 10px;
+  padding: 10px 0;
+  border: 2px solid #ffffff;
+  border-left: none;
+  border-right: none; }
 
 .pixelart__main-title {
+  margin: 0;
+  padding: 0; }
+
+.pixelart__content {
+  margin-top: 60px; }
+
+.pixelart__footer {
+  margin-top: 120px;
+  padding-bottom: 30px;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center; }
+
+.pixelart__footer-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 920px;
+  min-width: 320px;
+  min-height: 140px; }
+  .pixelart__footer-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #4B0082; }
+
+.pixelart__copyright {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0; }
+
+.pixelart__developer {
+  max-width: 120px;
+  margin: 0;
+  padding: 0; }
+
+.pixelart__link {
+  font-size: 8px;
+  line-height: 10px;
+  color: #8A2BE2;
+  text-decoration: none; }
+
+.pixelart__additional-info {
+  margin: 0;
+  margin-top: auto;
+  padding: 0;
+  font-size: 6px;
+  line-height: 10px; }
+
+/*
+==================================================================
+------------------------- МЕДИАВЫРАЖЕНИЯ -------------------------
+==================================================================
+*/
+@media (min-width: 768px) {
+  .pixelart__footer-wrapper {
+    max-width: 600px; } }
+
+@media (min-width: 1150px) {
+  .pixelart__footer-wrapper {
+    max-width: 920px; } }
+
+.drawing-board__wrapper {
+  max-width: 320px;
+  min-width: 300px; }
+
+.drawing-board__user-manual {
+  margin: 0;
+  padding: 0 10px;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: justify; }
+
+.drawing-board__user-manual-title {
+  margin: 0;
+  padding: 0; }
+
+.drawing-board__user-manual-emphasis {
+  color: #00BFFF; }
+
+.drawing-board__user-manual-instructions {
+  margin: 0; }
+
+.drawing-board__user-manual-text {
   margin: 0;
   padding: 0; }
 
@@ -265,4 +387,92 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  outline: 2px dashed red; }
+  margin: 0 auto;
+  margin-top: 60px; }
+
+.drawing-board__canvas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; }
+
+/*
+------------------------------------------------------------------
+********************** Интерактивные стили ***********************
+------------------------------------------------------------------
+*/
+.drawing-board__eraser-input:checked ~ .drawing-board__eraser-title {
+  color: #00BFFF; }
+
+.drawing-board__eraser-title:hover {
+  color: #DCDCDC; }
+
+.drawing-board__eraser-title:active {
+  opacity: 0.8; }
+
+/*
+==================================================================
+------------------------- МЕДИАВЫРАЖЕНИЯ -------------------------
+==================================================================
+*/
+@media (min-width: 768px) {
+  .drawing-board__wrapper {
+    max-width: 640px; }
+  .drawing-board__toolkit {
+    max-width: 400px; } }
+
+@media (min-width: 1150px) {
+  .drawing-board__wrapper {
+    max-width: 960px; }
+  .drawing-board__user-manual {
+    padding: 0 60px; } }
+
+.pixels-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  max-width: 280px;
+  min-width: 280px;
+  display: flex;
+  flex-wrap: wrap;
+  outline: 2px solid #eeeeee; }
+  .pixels-list--tablet, .pixels-list--desktop {
+    display: none; }
+
+.pixels-list__item {
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border: 1px dashed #eeeeee; }
+
+/*
+------------------------------------------------------------------
+********************** Интерактивные стили ***********************
+------------------------------------------------------------------
+*/
+.pixels-list__item:hover {
+  background-color: #DCDCDC;
+  cursor: pointer; }
+
+.pixels-list__item:active {
+  opacity: 0.9; }
+
+/*
+==================================================================
+------------------------- МЕДИАВЫРАЖЕНИЯ -------------------------
+==================================================================
+*/
+@media (min-width: 768px) {
+  .pixels-list--tablet {
+    display: flex; } }
+
+@media (min-width: 1150px) {
+  .pixels-list--desktop {
+    display: flex; } }
+
+.instructions {
+  margin-top: 20px; }
+
+.instructions__item {
+  margin-top: 10px; }
